@@ -38,9 +38,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AddinExpress.MSO.2005, Version=10.3.4730.0, Culture=neutral, PublicKeyToken=4416dd98f0861965, processorArchitecture=MSIL" />
-    <Reference Include="AddinExpress.OL.2005, Version=10.3.4730.0, Culture=neutral, PublicKeyToken=e69a7e0f3592d2b8, processorArchitecture=MSIL" />
-    <Reference Include="AddinExpress.OL.2005.Design, Version=10.3.4730.0, Culture=neutral, PublicKeyToken=e69a7e0f3592d2b8, processorArchitecture=MSIL" />
+    <Reference Include="AddinExpress.MSO.2005, Version=10.4.4741.0, Culture=neutral, PublicKeyToken=4416dd98f0861965, processorArchitecture=MSIL" />
+    <Reference Include="AddinExpress.OL.2005, Version=10.4.4741.0, Culture=neutral, PublicKeyToken=e69a7e0f3592d2b8, processorArchitecture=MSIL" />
+    <Reference Include="AddinExpress.OL.2005.Design, Version=10.4.4741.0, Culture=neutral, PublicKeyToken=e69a7e0f3592d2b8, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -137,6 +137,8 @@
   <PropertyGroup>
     <PostBuildEvent>copy /Y $(SolutionDir)\Loader\adxloader.dll $(TargetDir)
 copy /Y $(SolutionDir)\Loader\adxloader64.dll $(TargetDir)
-copy /Y $(SolutionDir)\Loader\adxloader.dll.manifest $(TargetDir)</PostBuildEvent>
+copy /Y $(SolutionDir)\Loader\adxloader.dll.manifest $(TargetDir)
+copy /Y $(SolutionDir)\Loader\IntResource.dll $(TargetDir)
+copy /Y $(SolutionDir)\Loader\IntResource64.dll $(TargetDir)</PostBuildEvent>
   </PropertyGroup>
 </Project>
